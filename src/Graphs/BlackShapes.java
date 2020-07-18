@@ -36,7 +36,7 @@ public class BlackShapes {
         matrix[x][y] = 'D';
 
         for (int[] dir : dirs) {
-            if (x + dir[0] < matrix.length && x + dir[0] >= 0 && y + dir[1] < matrix.length && y + dir[1] >= 0 && matrix[x + dir[0]][y + dir[1]] == 'X') {
+            if (x + dir[0] < matrix.length && x + dir[0] >= 0 && y + dir[1] < matrix[0].length && y + dir[1] >= 0 && matrix[x + dir[0]][y + dir[1]] == 'X') {
                 explore(matrix, x + dir[0], y + dir[1]);
             }
         }
